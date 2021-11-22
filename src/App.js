@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Comp = ({test}) => {
+  return (
+    <h1>{test}</h1>
+  )
+}
+
 function App() {
   return (
     <div className="App">
+      <Comp test={"Hoi hallo"} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,5 +28,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
