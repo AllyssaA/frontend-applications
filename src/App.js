@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { DataProvider } from './contexts/DataContext';
+import List from './components/List/List';
 
 const Comp = ({test}) => {
   return (
@@ -25,6 +27,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <DataProvider>
+        <List />
+      </DataProvider>
     </div>
   );
 }
